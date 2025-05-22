@@ -1,0 +1,73 @@
+{
+  "configurations" : [
+    {
+      "id" : "05084D85-721E-4E51-8782-02826D60C37C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:TaskTracker\/Core",
+          "identifier" : "ChartFeature",
+          "name" : "ChartFeature"
+        },
+        {
+          "containerPath" : "container:TaskTracker\/Core",
+          "identifier" : "DesignSystem",
+          "name" : "DesignSystem"
+        },
+        {
+          "containerPath" : "container:TaskTracker\/Core",
+          "identifier" : "TaskFeature",
+          "name" : "TaskFeature"
+        },
+        {
+          "containerPath" : "container:TaskTracker.xcodeproj",
+          "identifier" : "3770D5742DDD127D00119AB2",
+          "name" : "TaskTracker"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TaskTracker.xcodeproj",
+      "identifier" : "3770D5742DDD127D00119AB2",
+      "name" : "TaskTracker"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TaskTracker\/Core",
+        "identifier" : "TaskFeatureTests",
+        "name" : "TaskFeatureTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TaskTracker\/Core",
+        "identifier" : "DesignSystemTests",
+        "name" : "DesignSystemTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TaskTracker.xcodeproj",
+        "identifier" : "3770D5812DDD128000119AB2",
+        "name" : "TaskTrackerTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TaskTracker\/Core",
+        "identifier" : "ChartFeatureTests",
+        "name" : "ChartFeatureTests"
+      }
+    }
+  ],
+  "version" : 1
+}

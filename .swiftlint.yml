@@ -1,0 +1,24 @@
+included:
+    - TaskTracker/App
+    - TaskTracker/Core
+
+excluded:
+    - TaskTracker/Carthage
+    - TaskTracker/Pods
+    - TaskTracker/build
+    - TaskTracker/.build
+    - TaskTracker/TaskTracker.xcodeproj
+
+opt_in_rules:
+    - empty_count
+    - implicitly_unwrapped_optional
+    - discouraged_optional_collection
+    - fatal_error_message
+
+disabled_rules:
+    - line_length
+    - trailing_whitespace
+    - identifier_name
+    - discouraged_optional_collection
+
+reporter: xcode

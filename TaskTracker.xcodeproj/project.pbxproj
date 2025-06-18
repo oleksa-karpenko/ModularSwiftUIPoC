@@ -27,9 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		376578D42DE4E69100779C9F /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
+		376578D52DE4E69100779C9F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		3770D5752DDD127D00119AB2 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3770D5822DDD128000119AB2 /* TaskTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D1C4AD2DDF25FC000B522A /* All Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "All Tests.xctestplan"; sourceTree = "<group>"; };
+		37D54A922DE5FCDF00389736 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -97,6 +100,9 @@
 		3770D56C2DDD127D00119AB2 = {
 			isa = PBXGroup;
 			children = (
+				37D54A922DE5FCDF00389736 /* README.md */,
+				376578D42DE4E69100779C9F /* .swiftformat */,
+				376578D52DE4E69100779C9F /* .swiftlint.yml */,
 				37D1C4AD2DDF25FC000B522A /* All Tests.xctestplan */,
 				3770D5772DDD127D00119AB2 /* TaskTracker */,
 				3770D5852DDD128000119AB2 /* TaskTrackerTests */,
@@ -250,7 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ -x /opt/homebrew/bin/swiftformat ]; then\n  echo \"Running SwiftFormat...\"\n  /opt/homebrew/bin/swiftformat \"${SRCROOT}\" --config \"${SRCROOT}/.swiftformat\"\nelse\n  echo \"warning: SwiftFormat not installed\"\nfi\n";
+			shellScript = "if [ -x /opt/homebrew/bin/swiftformat ]; then\n  echo \"Running SwiftFormat...\"\n  echo \"/opt/homebrew/bin/swiftformat ${SRCROOT} --config ${SRCROOT}/.swiftformat\"\n  /opt/homebrew/bin/swiftformat \"${SRCROOT}\" --config \"${SRCROOT}/.swiftformat\"\nelse\n  echo \"warning: SwiftFormat not installed\"\nfi\n";
 		};
 		37D1C4C92DDF9A0D000B522A /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;

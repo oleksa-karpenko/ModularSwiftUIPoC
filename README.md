@@ -28,11 +28,9 @@ All modules live in the **same repository**, each inside the `/Core` folder as a
 
 The project defines 3 reusable feature modules:
 
-| Module        | Description                                                                 |
-|---------------|-----------------------------------------------------------------------------|
-| `ChartFeature`| Contains SwiftUI views for rendering charts                                 |
-| `TaskFeature` | Provides task list UI with toggle (done/undone) functionality               |
-| `DesignSystem`| Shared typography, fonts, and appearance styles used across all features    |
+1. `ChartFeature` - Contains SwiftUI views for rendering charts
+2. `TaskFeature` - Provides task list UI with toggle (done/undone) functionality
+3. `DesignSystem` - Shared typography, fonts, and appearance styles used across all features
 
 Each module is **independent and loosely coupled**, designed to be changed in isolation and easily testable.
 
@@ -54,11 +52,9 @@ The `App` target is the main bundle and integrates feature modules. It wires:
 
 The project includes **multiple test strategies**:
 
-| Type                | Tools Used                                                                 |
-|---------------------|----------------------------------------------------------------------------|
-| Unit Tests          | [Swift Testing](https://github.com/apple/swift-testing) (modern Swift-native alternative to XCTest) |
-| Snapshot Tests      | [SnapshotTesting](https://github.com/pointfreeco/swift-snapshot-testing) by PointFree |
-| Planned             | [ViewInspector](https://github.com/nalexn/ViewInspector) for SwiftUI introspection |
+1. Unit Tests - [Swift Testing](https://github.com/apple/swift-testing) (modern Swift-native alternative to XCTest)
+2. Snapshot Tests - [SnapshotTesting](https://github.com/pointfreeco/swift-snapshot-testing) by PointFree
+3. Planned - ViewInspector](https://github.com/nalexn/ViewInspector) for SwiftUI introspection
 
 Each module (`TaskFeature`, `ChartFeature`, `DesignSystem`) has **its own test target**, and the main app bundle has **integration tests** that validate how components work together.
 
@@ -126,12 +122,3 @@ This PoC demonstrates a **clean and scalable architecture** for SwiftUI projects
 - ✅ Unit & Snapshot testing
 - 🎨 Enforced code quality with linting/formatting
 - 💡 Support for scaling into enterprise-level apps
-
----
-
-## 📬 Questions or ideas?
-
-Feel free to fork the repo or reach out if you'd like to explore:
-- Dynamic feature injection
-- Dependency injection across packages
-- CI setup for lint/test coverage
